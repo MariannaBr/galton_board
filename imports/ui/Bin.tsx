@@ -15,8 +15,8 @@ const Bin = ({id, onClick, numBalls}: BinProps) => {
 
     return (
         <div className="">
-            <button onClick={handleClick} className="text-5xl bg-gray-300 m-10 p-2 pb-5">
-                | <span className="underline text-3xl">{numBalls}</span> |
+            <button onClick={handleClick} className="text-3xl bg-gray-300 p-1 pb-3">
+                | <span className="underline text-xl">{numBalls}</span> |
             </button>
         </div>
     )
