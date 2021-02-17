@@ -3,9 +3,10 @@ import Chart from 'react-apexcharts'
 
 interface GraphProps {
   bins: number[]
+  values: number[]
 }
 
-const Graph= ({bins}: GraphProps) => {
+const Graph= ({bins, values}: GraphProps) => {
 
   const options = {
     chart: {
@@ -19,7 +20,7 @@ const Graph= ({bins}: GraphProps) => {
   const series = [
     {
       name: "series-1",
-      data: [30, 40, 45, 50, 49, 60, 70, 91, 50, 20]
+      data: values
     }
   ]
 
