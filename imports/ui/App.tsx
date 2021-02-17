@@ -22,17 +22,19 @@ export const App = () => {
   }
 
   return (
-    <div className="max-w-7xl mx-auto">
-      <h1 className="text-5xl font-bold text-purple-500 flex justify-center my-10">GALTON BOARD</h1>
-      <h2 className="text-xl font-semibold text-purple-700 flex justify-start mb-3">Used door: Nr. {mean}</h2>
-      <h2 className="text-xl font-semibold text-purple-700 flex justify-start mb-5">Number of balls: {numBalls}</h2>
-      <div className="h-1/2">
-        <Graph bins={numberOfBins} values={values} />
-      </div>
-      <h2 className="text-3xl font-semibold flex justify-center text-purple-500 my-10">Normal distribution in Bins</h2>
-      <div className="grid grid-flow-row grid-cols-10 ml-16 gap-6">
-        {numberOfBins.map(num => <Bin key={num} id={num} onClick={handleChangeMean} numBalls={values[num]} />)}
+    <div className="bg-gray-900 h-screen flex">
+      <div className="max-w-7xl mx-auto my-10">
+        <h1 className="text-5xl font-bold text-green-500 flex justify-center">GALTON BOARD</h1>
+        <h2 className="text-xl font-semibold text-green-500 flex justify-start mb-3">Used door: Nr. {mean}</h2>
+        <h2 className="text-xl font-semibold text-green-500 flex justify-start mb-5">Number of balls: {numBalls}</h2>
+        <div className="h-1/2">
+          <Graph bins={numberOfBins} values={values} />
+        </div>
+        <div className="grid grid-flow-row grid-cols-10 ml-12 mt-20 gap-10">
+          {numberOfBins.map(num => <Bin key={num} id={num} onClick={handleChangeMean} numBalls={values[num]} />)}
+        </div>
       </div>
     </div>
+    
   )
 }

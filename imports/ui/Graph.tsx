@@ -13,18 +13,38 @@ const Graph= ({bins, values}: GraphProps) => {
       id: "basic-bar",
     },
     xaxis: {
-      categories: bins
-    }
+      categories: bins,
+      labels: {
+        style: {
+          colors: "#D1D5DB",
+          fontSize: '14px'
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+        style: {
+          colors: "#D1D5DB",
+          fontSize: '14px'
+        }
+      }
+    },
+    dataLabels: {
+      offsetY: 20,
+      style: {
+        fontSize: '16px',
+        colors: ["#6EE7B7"]
+      }
+    },
+    colors: ["#10B981"]
   }
 
   const series = [
     {
-      name: "series-1",
+      name: "number of balls",
       data: values
     }
   ]
-
-
 
   return (
     <div className="h-1/2">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 interface BinProps {
     id: number
@@ -14,12 +14,11 @@ const Bin = ({id, onClick, numBalls}: BinProps) => {
 
     return (
         <div className="">
-            <button onClick={handleClick} className="text-3xl bg-gray-300 p-6 ">
+            <button onClick={handleClick} className=" min-w-full text-2xl font-medium bg-gray-500 text-green-500 p-6 ">
                 {numBalls}
             </button>
         </div>
     )
-
 }
 
 export default Bin
