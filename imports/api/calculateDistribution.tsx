@@ -4,7 +4,7 @@ function getUniformSample() {
     return Math.random()
   }
 
-  // Create a sample from standard normal distrubion using n = 2000, enough uniform samples => Central Limit Theorem
+  // Create a sample from standard normal distrubion => Central Limit Theorem
   const n: number = 1000
   function getNormalSample(n: number) {
     const samplesArray: number[] = []
