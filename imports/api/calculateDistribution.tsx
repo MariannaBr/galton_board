@@ -4,8 +4,8 @@ function getUniformSample() {
     return Math.random()
   }
 
-  // Create a sample from standard normal distrubion => Central Limit Theorem
-  const n: number = 10
+  // Create a sample from standard normal distrubion, n = 1000 => big enough to get average as 1/2 => Central Limit Theorem
+  const n: number = 1000
   function getNormalSample(n: number) {
     const samplesArray: number[] = []
     for (var i=0; i<n; i++) {

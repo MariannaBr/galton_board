@@ -9,7 +9,7 @@ interface BinProps {
 
 const Bin = ({id, onClick, numBalls}: BinProps) => {
 
-    // Clicking on the bin will send it's id to App
+    // Clicking on the bin will send its id to App
     function handleClick() {
         onClick(id)
     }
