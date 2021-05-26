@@ -20,4 +20,6 @@ that are in this bin and histogram will show result of this round of sampling. C
 # Project status
 Project is done, ready to play with.
 
+Link to game: [Deploy - Galton board](http://galton-board.meteorapp.com/)
+
 ![Alt text](public/demo.png?raw=true "Demo")
